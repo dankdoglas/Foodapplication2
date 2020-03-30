@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".noodleOrdering">
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/containertitle"
+        android:layout_width="155dp"
+        android:layout_height="24dp"
+        android:text="Cart"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/containertitle2"
+        android:layout_width="155dp"
+        android:layout_height="24dp"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="387dp"
+        android:layout_height="53dp"
+        android:fontFamily="monospace"
+        android:text="Noodle Stall"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:text="order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="177dp"
+        android:layout_height="29dp"
+        android:text="Total:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <ScrollView
+        android:layout_width="173dp"
+        android:layout_height="226dp"
+        android:backgroundTint="#850000"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="161dp"
+        android:layout_height="228dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/foodselection1"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:onClick="additem"
+                android:text="Laksa"
+                android:textColor="@color/rotiprata"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection2"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:onClick="additem"
+                android:text="Fishball Noodle"
+                android:textColor="@color/rotiprata"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection3"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:onClick="additem"
+                android:text="Mee Pok"
+                android:textColor="@color/ta"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection4"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:onClick="additem"
+                android:text="TextView"
+                android:textColor="@color/rotipra"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection5"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/rotipra"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection6"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/rotipra"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection7"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/rotipra"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection8"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/rotipra"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodselection9"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#89A5DF"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/rotipra"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="423dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="20dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Customize "
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
